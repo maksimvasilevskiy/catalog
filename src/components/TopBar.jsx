@@ -20,10 +20,6 @@ const PLATFORMS = [
         slug: "nintendo",
     },
     {
-        name: "GameCube",
-        slug: "gamecube",
-    },
-    {
         name: "Android",
         slug: "android",
     },

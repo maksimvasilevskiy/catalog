@@ -8,6 +8,11 @@ body {
   background: #020f1e;
 }
 
+a {
+  color: inherit; 
+  text-decoration: inherit;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -105,6 +110,72 @@ code {
 .top-bar__platform.selected {
   background-color: rgb(30, 52, 52);
 }
+.game-page {
+  padding: 50px 0;
+}
+.game-page__title {
+  color: white;
+  font-size: 64px;
+  margin-bottom: 25px;
+}
+.game-page__image {
+  max-width: 800px;
+}
+.game-page__rating {
+  color: white;
+  font-size: 24px;
+}
+.game-page__release-date {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.game-page__description {
+  color: white;
+  font-size: 24px;
+  text-align: justify;
+}
+.game-page__back {
+  color: white;
+  font-size: 30px;
+  display: block;
+  width: max-content;
+}
+.game-page__back img {
+  width: 22px;
+  margin-right: 10px;
+}
+.game-page__screenshots {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.game-page__screenshot {
+  height: 300px;
+  margin-top: 50px;
+}
+.styles-module_carousel-arrow__26sRw[data-direction="left"] {
+  width: 0;
+  height: 0;
+  background: none;
+  border-left: none;
+  border-top: 25px solid transparent;
+  border-right: 30px solid rgba(255, 255, 255, 0.36);
+  border-bottom: 25px solid transparent;
+  margin-top: 160px;
+  cursor: pointer;
+}
+.styles-module_carousel-arrow__26sRw[data-direction="right"] {
+  width: 0;
+  height: 0;
+  background: none;
+  border-right: none;
+  border-top: 25px solid transparent;
+  border-left: 30px solid rgba(255, 255, 255, 0.36);
+  border-bottom: 25px solid transparent;
+  margin-top: 160px;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 1200px) {
   .container {
@@ -119,5 +190,8 @@ code {
 @media screen and (max-width: 991px) {
   .wrap {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .game-page__image {
+    max-width: 100%;
   }
 }
