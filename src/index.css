@@ -71,13 +71,19 @@ code {
   display: flex;
   color: white;
   padding: 10px 0;
+  flex-wrap: wrap;
 }
 .top-bar__group {
   display: flex;
   margin-right: 30px;
+  margin-bottom: 10px;
+}
+.top-bar__group:last-child {
+  margin-right: 0;
 }
 .top-bar__platforms {
   display: flex;
+  flex-wrap: wrap;
 }
 .top-bar__label {
   margin-right: 30px;
@@ -88,10 +94,30 @@ code {
   border-radius: 15px;
   margin-right: 10px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 .top-bar__platform:hover {
   background-color: rgb(30, 52, 52);
 }
 .top-bar__platform.selected {
   background-color: rgb(30, 52, 52);
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 800px;
+    padding: 0 15px;
+  }
+  .wrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
